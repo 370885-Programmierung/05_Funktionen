@@ -10,8 +10,19 @@ function test() {
 //  call
 // test();
 
-function ausgabeName (personName, personNachname) //Parameter
+function ausgabeName (personName) //Parameter
 {
-    console.log ("Hallo " + personName + " " + personNachname);
+    console.log ("Hallo " + personName);
+
+    return;
 }
- ausgabeName("Sabine", "Eitel") //Aufruf mit Argunment
+
+function zuweisungName(personName)
+{
+    personName = prompt("Bitte den Namend er Person eingeben:");
+
+    return personName;
+}
+
+
+ ausgabeName(zuweisungName()); //Aufruf mit Argunment
